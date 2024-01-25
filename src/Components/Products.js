@@ -26,12 +26,12 @@ const Products = () => {
 
         <>
             <div>Products</div>
-            <div className="container">
-                <div className="row">
-            <div className="d-flex flex-lg-row flex-md-row flex-sm-column col-lg-12 col-md-12 col-sm-12 flex-wrap justify-content-center col-12">
-            {product.map((product, index) => (<ProductCard key={index} productItem={product} />))}
-            </div>
-            </div>
+            <div className="container-fluid">
+                <div className="row justify-content-center ">
+                    <div className="d-flex flex-lg-row flex-md-row flex-sm-column justify-content-center  flex-wrap col-12">
+                        {product.map((product, index) => (<ProductCard key={index} productItem={product} />))}
+                    </div>
+                </div>
             </div>
         </>
     )
