@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Components/Header'
 import Home from './Components/Home'
+import CoffeeDetails from './Components/CoffeeDetails'
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import '@fortawesome/fontawesome-free/css/all.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -11,16 +12,17 @@ import React, { Suspense } from 'react';
 function App() {
   return (
     <div className="App">
-        <BrowserRouter>
-       
+      <BrowserRouter>
+        <Header />
         <Routes>
 
-          <Route  path='' element={<Header />} />
 
+          <Route path='' element={<Home />} />
+          <Route path='/CoffeeDetails/:id' element={<CoffeeDetails />} />
 
         </Routes>
 
-        <Home />
+
       </BrowserRouter>
     </div>
   );

@@ -2,8 +2,11 @@ import Card from 'react-bootstrap/Card';
 import '../CSS/ProductCardCss.css'
 import Button from 'react-bootstrap/Button';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 const ProductCard = ({ productItem }) => {
     
+    const navigate = useNavigate();
+
     return (
 
         <>
@@ -19,7 +22,7 @@ const ProductCard = ({ productItem }) => {
         </Button>{' '}
                 </Card.Body>
                 <Card.Footer>
-                    <small className="favbtn"><button className='details'>More</button>  <i className="fa-regular fa-heart"></i></small>
+                    <small className="favbtn"><button className='details' onClick={() => navigate(`/CoffeeDetails/${productItem.id}`)}  >More</button>  <i className="fa-regular fa-heart"></i></small>
                 </Card.Footer>
             </Card>
 

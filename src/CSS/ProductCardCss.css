@@ -14,6 +14,12 @@ padding: 0px 5px;
 
 }
 
+.details:hover{
+background-color: gainsboro;
+color: black;
+
+}
+
 .fa-heart{
     font-size: 24px;
 }
