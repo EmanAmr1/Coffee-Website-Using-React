@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
 import React, { Suspense } from 'react';
+import FavCoffee from './Components/FavCoffee';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
 
           <Route path='' element={<Home />} />
           <Route path='/CoffeeDetails/:id' element={<CoffeeDetails />} />
-
+          <Route path='/Fav' element={<FavCoffee />} />
         </Routes>
 
 
