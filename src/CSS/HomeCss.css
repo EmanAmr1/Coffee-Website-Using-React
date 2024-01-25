@@ -1,7 +1,27 @@
-.coffy{
 
-width: 98.5vw;
-height: 90vh;
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
+.coffy {
+
+    width: 98.9vw;
+    height: 90vh;
+    margin-top: -20px ;
+}
+
+
+
+h1 {
+
+    position: absolute;
+    color: white !important;
+    top: 30%;
+    left: 5%;
+    font-weight: bold;
+    font-size: 80px !important;
+
+    text-shadow: 2px 2px 2px white;
 
 }

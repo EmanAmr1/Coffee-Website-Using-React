@@ -1,4 +1,5 @@
 import Card from 'react-bootstrap/Card';
+import '../CSS/ProductCardCss.css'
 const ProductCard = ({ productItem }) => {
 
     return (
@@ -7,16 +8,14 @@ const ProductCard = ({ productItem }) => {
 
 
 
-            <Card className=' col-2 mx-1 my-1 '>
+            <Card className=' col-2 mx-1 my-1 myCard'>
                 <Card.Img variant="top" src={productItem.image} />
                 <Card.Body>
                     <Card.Title>{productItem.title}</Card.Title>
-                    <Card.Text>
-                        {productItem.description}
-                    </Card.Text>
+                   
                 </Card.Body>
                 <Card.Footer>
-                    <small className="text-muted">{productItem.ingredients}</small>
+                    <small className="favbtn"><button className='details'>More Details</button>  <i className="fa-regular fa-heart"></i></small>
                 </Card.Footer>
             </Card>
 

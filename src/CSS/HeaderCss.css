@@ -7,15 +7,20 @@
 
     display: flex;
     justify-content: flex-end;
+  
+    box-shadow: 2px 2px 2px gainsboro;
+}
 
 
-
+.all{
+    display: flex;
+    justify-content: space-between;
 }
 
 ul{
 
-    background-color: #eee;
-    color: rgb(65, 28, 28);
+    background-color: rgb(43, 13, 13);
+    color: white;
     font-weight: bold;
   
 }
@@ -24,4 +29,11 @@ ul{
 .header li{
     list-style: none;
     padding: 20px;
+}
+
+.all img {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+
 }

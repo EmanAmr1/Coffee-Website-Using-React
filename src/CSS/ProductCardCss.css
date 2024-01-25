@@ -1,0 +1,24 @@
+.myCard{
+
+    box-shadow: 5px 5px 5px gray;
+}
+
+.details{
+
+border-radius: 15px;
+background-color: rgb(43, 13, 13);;
+color: white;
+
+border: none;
+padding: 5px;
+
+}
+
+.fa-heart{
+    font-size: 24px;
+}
+
+.favbtn{
+    display: flex;
+    justify-content: space-between;
+}

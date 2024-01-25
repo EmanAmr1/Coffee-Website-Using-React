@@ -1,4 +1,4 @@
-import co3 from '../images/co3-.jpg'
+import pc3 from '../images/bc3.png'
 import '../CSS/HomeCss.css'
 import Products from '../Components/Products'
 const Home =()=>{
@@ -7,7 +7,13 @@ const Home =()=>{
 return (
 <>
 
-<img src={co3} alt='' className='coffy' />
+<img src={pc3} alt='' className='coffy' />
+
+<h1>
+  Time To Discover<br/>
+  Coffee House
+</h1>
+
 <Products />
 </>
 )

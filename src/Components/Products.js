@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import ProductCard from "./ProductCard"
 import axios from 'axios';
+import '../CSS/ProductsCss.css'
 const Products = () => {
 
     const [product, setProduct] = useState([])
@@ -25,7 +26,7 @@ const Products = () => {
     return (
 
         <>
-            <div>Products</div>
+            <div className="d-flex justify-content-center my-5 ourPro" >Our Products </div>
             <div className="container-fluid">
                 <div className="row justify-content-center ">
                     <div className="d-flex flex-lg-row flex-md-row flex-sm-column justify-content-center  flex-wrap col-12">
