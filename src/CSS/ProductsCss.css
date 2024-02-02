@@ -26,8 +26,7 @@
 }
 
 .selected-button  {
-    /* your selected button styling */
-    background-color: #3498db; /* change to your desired background color */
-    color: #fff; /* change to your desired text color */
-    /* other styles */
+    
+    background-color: #3498db; 
+    
 }
